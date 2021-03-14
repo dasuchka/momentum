@@ -1,0 +1,124 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: Quicksand;
+    src: url("assets/fonts/Quicksand-Medium.ttf");
+}
+
+body{
+    font-family: Quicksand;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    transition: background-image 1s ease-in-out;
+}
+
+.button_picture_change{
+    width: 45px;
+    height: 45px;
+    border-color: black;
+    border-radius: 50%;
+    border-style: none;
+    outline: none;
+    font-family: Quicksand;
+}
+.button_picture_change:hover{
+    fiter:grayscale(.8);
+}
+.button_picture_change:active,
+.button_picture_change:focus{
+    outline: 0;
+}
+.button_picture_change:active{
+    transform: scale(1.02);
+}
+
+.button_quote_change{
+    width: 45px;
+    height: 45px;
+    border-color: black;
+    border-radius: 50%;
+    border-style: none;
+    outline: none;
+    font-family: Quicksand;
+}
+.button_quote_change:hover{
+    fiter:grayscale(.8);
+}
+.button_quote_change:active,
+.button_quote_change:focus{
+    outline: 0;
+}
+.button_quote_change:active{
+    transform: scale(1.02);
+}
+
+#time{
+    font-size: 8rem;
+}
+
+#date{
+    font-size: 4rem;
+    opacity: 0.8;
+}
+
+h1{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+h2{
+    margin-bottom: 0.5rem;
+    opacity: 0.8;
+}
+
+@media(max-width: 700px){
+    #time{
+        font-size: 6rem;
+    }
+}
+
+/*Quote*/
+.quote {
+  font: 1.2rem Georgia, serif;
+  margin: 0;
+  background: rgba(255, 255, 255, 0.5);
+  padding: 0.5em;
+  border-radius: 1em;
+    color: black;
+}
+.quote figcaption,
+.quote blockquote {
+  margin: 0.5em;
+}
+.quote figcaption {
+  text-align: right;
+}
+.quote_weather{
+    width: 80%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 20px;
+}
+.block_quote{
+    margin-right: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote_title{
+    margin-bottom: 10px;
+    color: white;
+    font-size: 30px;
+    text-shadow: 1px 1px 2px black;
+}
